@@ -1,27 +1,63 @@
 # shareABadge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+## What is the Use of This Repo
+This App is a shareABadge which uses
+1. Angular Components
+2. HTTP Client
+3. Angular Routing
+4. Niftron SDK
+5. Very Basic Bootstrap 
 
-## Development server
+This Applications template can be copied and used to build other bigger applications.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The CSS used is very basic since the main aim of this project is to focus on angular 6
 
-## Code scaffolding
+## Live Application url
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 
+This is the link where the app is deployed.
 
-## Build
+## What Does this Application do
+ 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Prerequites to Run the Application
 
-## Running unit tests
+### Install NodeJS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Refer https://nodejs.org/en/ to install NodeJS
 
-## Running end-to-end tests
+### Install Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Use the following command to install angular CLI
 
-## Further help
+```bash
+npm install -g @angular/cli
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Refer https://cli.angular.io/ to know more about angular CLI
+
+## Steps to Run the Application
+
+Clone the repo into local
+
+Open the project folder and install the npm packages using the following command
+
+```bash
+npm install
+```
+
+In Order to Run the Application Type the following command in command prompt
+
+```bash
+npm start
+```
+
+The Application runs on **localhost:4200**
+
+## Application Design
+
+The Components Created are
+ 
+## Angular 6 References
+
+Refer to https://angular.io/guide/quickstart to get an understanding of how angular 6 works

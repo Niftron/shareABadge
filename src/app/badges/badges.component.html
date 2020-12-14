@@ -1,0 +1,47 @@
+<div class="card">
+  <div class="card-header">
+    Test transaction & Configure SDK
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Asset Code: NIFTRON</h5>
+    <p class="card-text">Issuer : {{niftrons?.issuer}}</p>
+    <p class="card-text">Niftrons : {{niftrons?.balance }}</p>
+
+
+    <button class="btn btn-primary" (click)="testSDK()">Test Transaction</button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-header">
+    Badges
+  </div>
+
+  <div class="card-body">
+    <div class="col-md-6 centeralign">
+      <div class="card centeralign addmargin" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Create New Badge</h5>
+
+          <a (click)=createBadge() class="btn btn-primary">Create</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="col-md-6 centeralign">
+      <div class="card centeralign addmargin" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">name</h5>
+          <p class="card-text">Image</p>
+          <p class="card-text">Quantity</p>
+
+          <a (click)=goToTransferPage(1) class="btn btn-primary">Transfer Badge</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
