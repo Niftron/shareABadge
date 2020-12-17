@@ -30,15 +30,18 @@
     </div>
   </div>
 
-  <div class="card-body">
+  <div class="card-body" *ngFor="let token of tokens">
     <div class="col-md-6 centeralign">
       <div class="card centeralign addmargin" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">name</h5>
-          <p class="card-text">Image</p>
-          <p class="card-text">Quantity</p>
+          <!-- <img src="{{token.previewUrl}}" alt=""> -->
+          <h5 class="card-title">Name: {{token.tokenName}}</h5>
+          <p class="card-text">Type: {{token.tokenType}}</p>
+          <p class="card-text">Code: {{token.assetCode}}</p>
+          <h5 class="card-title">Count: {{token.assetCount}}</h5>
 
-          <a (click)=goToTransferPage(1) class="btn btn-primary">Transfer Badge</a>
+
+          <a (click)=goToTransferPage(token) class="btn btn-primary">Transfer Badge</a>
         </div>
       </div>
     </div>

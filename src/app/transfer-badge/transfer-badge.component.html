@@ -3,8 +3,23 @@
     Transfer Badge Details
   </div>
   <div class="card-body">
-    <h5 class="card-title">name</h5>
-    <p class="card-text">Name : name</p>
+    <h5 class="card-title">{{transferToken.assetName}}</h5>
+    <img src="{{transferToken.previewUrl}}" alt="">
+    <h5 class="card-title">Name: {{transferToken.tokenName}}</h5>
+    <p class="card-text">Type: {{transferToken.tokenType}}</p>
+    <p class="card-text">Code: {{transferToken.assetCode}}</p>
+    <h5 class="card-title">Count: {{transferToken.assetCount}}</h5>
     <a (click)=goToBadgesPage() class="btn btn-primary">Go Back</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Transfer
+  </div>
+  <div class="card-body">
+    <p class="card-text">Input the public key of your friend</p>
+    <input type="text" [(ngModel)]="receiverPK">
+    <a (click)=transfer() class="btn btn-primary">Transfer</a>
   </div>
 </div>

@@ -8,14 +8,17 @@ import { NiftronConfig, NIFTRON } from 'niftron-sdk';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor() { }
   title = 'Share A Badge';
+
+  constructor() {
+
+  }
+
   ngOnInit(): void {
-    console.log('AppComponent');
 
     const niftronConfig: NiftronConfig = {
-      projectKey: 'GAV6PIK545MIPBTO66QNCDCU5R6ZQT3UW6CXIDQX75KJKOIX2A7NO5QM',
-      secretKey: 'SAOP4EAUIZMV3WVOA73GGLQ5SX63YA4RSA4CHBBK2SH5MPQERLVZWWLA',
+      projectKey: 'GCVBUIXIIV3WPZ4YPMVKSKEYZMKZPIWSLPS52QBUTNMQQABKADRHL7JP',
+      secretKey: 'SBKAETY5WKUI6EVHL55LNHTWJ5OQHILH7SXV2HXWK6CPWBYJZCUW2GPD',
     };
 
     const niftron: NIFTRON = new NIFTRON(niftronConfig);
