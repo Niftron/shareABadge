@@ -58,17 +58,18 @@ export class BadgesComponent implements OnInit {
 
   async createBadge() {
     const createBadgeModel: CreateBadgeModel = {
-      tokenName: 'CBS - 2020',
+      tokenName: 'Niftron',
       tokenType: TokenType.SFT,
       tokenData: JSON.stringify({ 'Organizer': 'Niftron' }),
       tokenCount: 10,
-      previewImageUrl: 'https://i.ibb.co/VqWSJ2k/CBS-2020.png',
+      previewImageUrl: 'https://www.colomboblockchainsummit.lk/images/niftron.png',
     };
-    // previewImageUrl: 'https://www.colomboblockchainsummit.lk/images/niftron.png',
+    // previewImageUrl: 'https://i.ibb.co/VqWSJ2k/CBS-2020.png',
 
     await NIFTRON.tokenBuilder
       .createBadge(createBadgeModel)
       .then((res) => {
+        this.getTokens();
         console.log(res);
       })
       .catch((err) => {

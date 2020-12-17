@@ -33,7 +33,7 @@ export class TransferBadgeComponent implements OnInit {
         this.transferToken.assetCode,
         this.transferToken.assetIssuer,
         1, // amount
-        'GATNGTO7TFARD3NMY3JT355Z6C6C6ZXVEVPNNB2PKHXHYRCAGXYTT67W', // senderPk
+        'GBHAERD76652ZQPUJCU2VUEGO36U5E3I2BNB4GDAGQKU47JHBI7SSPZ4', // senderPk
         undefined, // SenderKeypair
         true // for dev
       ).then((res: Transfer) => {
